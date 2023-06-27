@@ -4,6 +4,7 @@
   --clr-very-pale-blue: 225 100% 98%;
   --clr-desaturated-blue: 224 23% 55%;
   --clr-dark-blue: 223 47% 23%;
+  --clr-white: 0 0% 100%;
 
   --ff-sans: 'Red Hat Display', sans-serif;
 
@@ -53,77 +54,7 @@ select {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-:root {
-  --clr-pale-blue: 225 100% 94%;
-  --clr-bright-blue: 245 75% 52%;
-  --clr-very-pale-blue: 225 100% 98%;
-  --clr-desaturated-blue: 224 23% 55%;
-  --clr-dark-blue: 223 47% 23%;
-
-  --ff-sans: 'Red Hat Display', sans-serif;
-
-  --fw-medium: 500;
-  --fw-bold: 700;
-  --fw-black: 900;
-}
-
-/* RESET */
-
-/* https://andy-bell.co.uk/a-modern-css-reset */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: inherit;
 }
 
@@ -146,6 +77,76 @@ body {
   background: url(./images/pattern-background-mobile.svg) no-repeat fixed top
       center,
     hsl(var(--clr-pale-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  background: none;
+  border: none;
+}
+
+.order-summary-card {
+  max-width: 20.438em;
+  background-color: hsl(var(--clr-white));
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.order-summary-card__details {
+  padding: 2em 1.5em;
+}
+
+.order-summary-card__title {
+  font-weight: var(--fw-black);
+  font-size: 1.375rem;
+  color: hsl(var(--clr-dark-blue));
+  text-align: center;
+
+}
+
+.order-summary-card__desc {
+  margin-block: 1em 1.5em;
+  margin-inline: 0.5em;
+  color: hsl(var(--clr-desaturated-blue));
+  text-align: center;
+
+}
+
+.order-summary-card__plan {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+  padding: 1em;
+  background-color: hsl(var(--clr-very-pale-blue));
+  border-radius: 0.5em;
+}
+
+.order-summary-card__plan-details {
+  flex: 1;
+  text-align: start;
+  font-size: 0.875rem;
+}
+
+.order-summary-card__plan-name {
+  font-weight: var(--fw-bold);
+  color: hsl(var(--clr-dark-blue));
+}
+
+.order-summary-card__plan-price {
+  color: hsl(var(--clr-desaturated-blue));
+}
+
+.order-summary-card__action-plan-change {
+  font-weight: var(--fw-bold);
+  font-size: 0.8125rem;
+  color: hsl(var(--clr-bright-blue));
+}
+
+.order-summary-card__action-proceed {
+  margin-block: 1.5em;
 }
 
 @media screen and (min-width: 23.5em) {
