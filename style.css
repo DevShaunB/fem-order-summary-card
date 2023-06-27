@@ -1,3 +1,17 @@
+:root {
+  --clr-pale-blue: 225 100% 94%;
+  --clr-bright-blue: 245 75% 52%;
+  --clr-very-pale-blue: 225 100% 98%;
+  --clr-desaturated-blue: 224 23% 55%;
+  --clr-dark-blue: 223 47% 23%;
+
+  --ff-sans: 'Red Hat Display', sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
 /* RESET */
 
 /* https://andy-bell.co.uk/a-modern-css-reset */
