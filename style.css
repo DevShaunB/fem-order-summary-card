@@ -67,3 +67,89 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+:root {
+  --clr-pale-blue: 225 100% 94%;
+  --clr-bright-blue: 245 75% 52%;
+  --clr-very-pale-blue: 225 100% 98%;
+  --clr-desaturated-blue: 224 23% 55%;
+  --clr-dark-blue: 223 47% 23%;
+
+  --ff-sans: 'Red Hat Display', sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/* RESET */
+
+/* https://andy-bell.co.uk/a-modern-css-reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* COMMON */
+
+body {
+  font-family: var(--ff-sans);
+  padding: 4.438em 1.5em;
+  background: url(./images/pattern-background-mobile.svg) no-repeat fixed top
+      center,
+    hsl(var(--clr-pale-blue));
+}
+
+@media screen and (min-width: 23.5em) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+}
