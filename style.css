@@ -97,6 +97,7 @@ body {
   background-color: hsl(var(--clr-white));
   border-radius: 1em;
   overflow: hidden;
+  box-shadow: 0 1rem 1rem 0 hsl(var(--clr-desaturated-blue) / 0.1);
 }
 
 .order-summary-card__details {
