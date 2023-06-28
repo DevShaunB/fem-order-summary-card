@@ -163,7 +163,7 @@ body {
   color: hsl(var(--clr-white));
   padding: 0.9375em;
   border-radius: 0.75em;
-  box-shadow: 0 1.5rem 1rem 0 hsl(var(--clr-bright-blue) / 0.15);
+  box-shadow: 0 1rem 1rem 0 hsl(var(--clr-bright-blue) / 0.15);
 }
 
 .order-summary-card__action-proceed:where(:hover, :focus-visible) {
