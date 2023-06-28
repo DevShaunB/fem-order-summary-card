@@ -80,6 +80,18 @@ a {
   justify-content: center;
 }
 
+.font-medium {
+  font-weight: var(--fw-medium);
+}
+
+.font-bold {
+  font-weight: var(--fw-bold);
+}
+
+.font-black {
+  font-weight: var(--fw-black);
+}
+
 /* COMMON */
 
 body {
@@ -116,7 +128,6 @@ body {
 }
 
 .order-summary-card__title {
-  font-weight: var(--fw-black);
   font-size: 1.375rem;
   color: hsl(var(--clr-dark-blue));
   text-align: center;
@@ -143,7 +154,6 @@ body {
 }
 
 .order-summary-card__plan-name {
-  font-weight: var(--fw-bold);
   color: hsl(var(--clr-dark-blue));
 }
 
@@ -152,7 +162,6 @@ body {
 }
 
 .order-summary-card__action-plan-change {
-  font-weight: var(--fw-bold);
   font-size: 0.8125rem;
   color: hsl(var(--clr-bright-blue));
 }
