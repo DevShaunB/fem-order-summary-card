@@ -69,6 +69,17 @@ a {
   }
 }
 
+/* UTILS */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 /* COMMON */
 
 body {
@@ -76,9 +87,6 @@ body {
   padding: 4.438em 1.5em;
   background: url(./images/pattern-background-mobile.svg) no-repeat top center,
     hsl(var(--clr-pale-blue));
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn {
@@ -122,8 +130,6 @@ body {
 }
 
 .order-summary-card__plan {
-  display: flex;
-  align-items: center;
   gap: 1.25em;
   padding: 1em;
   background-color: hsl(var(--clr-very-pale-blue));
