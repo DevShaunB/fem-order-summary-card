@@ -35,6 +35,8 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-card-using-flexbox-and-utility-classes-ofCV_dVIZg](https://www.frontendmentor.io/solutions/order-summary-card-using-flexbox-and-utility-classes-ofCV_dVIZg)
+
 - Live Site URL: [https://devshaunb.github.io/fem-order-summary-card/](https://devshaunb.github.io/fem-order-summary-card/)
 
 ## Reference
